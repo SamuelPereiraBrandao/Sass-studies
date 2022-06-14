@@ -1,0 +1,56 @@
+@mixin texto($TamanhoDoTexto,$FonteDoTexto){
+    font-size: $TamanhoDoTexto;
+    font-family:$FonteDoTexto;
+}
+
+.bola1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: $primarycolor;
+        a{
+            @include texto(50px,arial);
+        color:$neutracolor;
+        &:hover{
+            background-color: #50d624;
+            border: $secondarycolor;
+            border-radius: 10px;
+            padding: 10px;
+            color: $tertiarycolor;
+        }
+    }
+
+    &:hover{
+        background-color: $secondarycolor;
+    }
+}
+
+.bola2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color:$secondarycolor ;
+    &:hover{
+        background-color: $neutracolor;
+    }
+}
+
+.bola3{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color:$tertiarycolor ;
+    &:hover{
+        background-color: $primarycolor;
+    }
+
+}
+.bola4{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color:$neutracolor ;
+    &:hover{
+        background-color: $secondarycolor;
+    }
+}
