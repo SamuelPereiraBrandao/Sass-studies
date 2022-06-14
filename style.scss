@@ -1,7 +1,5 @@
-$primarycolor: #50d624;
-$secondarycolor:blue;
-$tertiarycolor:red;
-$neutracolor:#333;
+@import '_variable.scss';
+
 @mixin flexcenter($justifyy,$direcao){
     display: flex;
     justify-content: $justifyy;
@@ -9,7 +7,7 @@ $neutracolor:#333;
     flex-direction: $direcao;
 }
 body{
-    @include flexcenter(center,row);
+    @include flexcenter(center,column);
     width: 100%;
     height: 100vh;
 
